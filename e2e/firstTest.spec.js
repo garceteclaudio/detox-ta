@@ -1,5 +1,8 @@
 import * as detox from 'detox';
+// detox build --configuration ios.sim.release
+// detox test --configuration ios.sim.release
 
+// detox build --configuration ios.sim.debug
 // detox test --configuration ios.sim.debug
 
 describe('Several tests on screen', () => {
@@ -16,7 +19,12 @@ describe('Several tests on screen', () => {
     await detox.element(detox.by.id('lastName')).typeText('Garcete');
   });
 
-  it.only('should press the button Crear cuenta:', async () => {
+  it('should complete Nombre and Apellido input', async () => {
+    await detox.element(detox.by.id('name')).typeText('Kari');
+    await detox.element(detox.by.id('lastName')).typeText('de la auiqaca');
+  });
+
+  it('should press the button Crear cuenta:', async () => {
     await element(by.text('Crear cuenta').withAncestor(by.id('button1'))).tap();
   });
 });
