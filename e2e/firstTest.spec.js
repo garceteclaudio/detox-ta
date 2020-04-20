@@ -1,9 +1,13 @@
-import * as detox from 'detox';
 // detox build --configuration ios.sim.release
 // detox test --configuration ios.sim.release
 
 // detox build --configuration ios.sim.debug
 // detox test --configuration ios.sim.debug
+
+//detox build -c android.emu.debug
+//detox test -c android.emu.debug
+
+import * as detox from 'detox';
 
 describe('Several tests on screen', () => {
   beforeEach(async () => {
