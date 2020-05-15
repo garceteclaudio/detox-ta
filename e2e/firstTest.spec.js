@@ -7,6 +7,8 @@
 //detox build -c android.emu.debug
 //detox test -c android.emu.debug
 
+//detox build -c android.emu.release
+
 import * as detox from 'detox';
 
 describe('Several tests on screen', () => {
@@ -25,7 +27,7 @@ describe('Several tests on screen', () => {
 
   it('should complete Nombre and Apellido input', async () => {
     await detox.element(detox.by.id('name')).typeText('Kari');
-    await detox.element(detox.by.id('lastName')).typeText('de la auiqaca');
+    await detox.element(detox.by.id('lastName')).typeText('kari');
   });
 
   it('should press the button Crear cuenta:', async () => {

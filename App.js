@@ -49,7 +49,7 @@ class Home extends Component {
         <ScrollView>
           <View style={styless.containerr}>
             <Text style={styless.item}>Carlos</Text>
-            <Text style={styless.item}>Gus</Text>
+            <Text style={styless.item}>Angelo</Text>
             <Text style={styless.item}>Karina</Text>
             <Text style={styless.item}>Lexi</Text>
             <Text style={styless.item}>Karen</Text>
