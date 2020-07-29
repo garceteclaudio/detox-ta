@@ -1,13 +1,30 @@
 // detox build --configuration ios.sim.release
 // detox test --configuration ios.sim.release
 
+//
+//
+// iOS Debug
 // detox build --configuration ios.sim.debug
 // detox test --configuration ios.sim.debug
 
-//detox build -c android.emu.debug
-//detox test -c android.emu.debug
-
-//detox build -c android.emu.release
+///
+///
+///Android
+///Debug
+//
+///
+///
+//  detox build -c android.emu.debug
+//  detox test -c android.emu.debug
+///
+///
+///Android
+///Release
+//
+///
+///
+//  detox build -c android.emu.release
+//  detox test -c android.emu.release
 
 import * as detox from 'detox';
 
